@@ -10,7 +10,7 @@ public class calculator {
        int add = a+b;
        int sub = a-b;
        int mul = a*b;
-       double div = a/b;
+       float div = a/b;
 
        switch (button) {
         case 1: System.out.println(add);

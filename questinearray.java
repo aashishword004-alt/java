@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class questinearray {
     public static void main(String args[])
     {
-
+     
+        // linerar search
 
         Scanner sc = new Scanner(System.in);
         int size =  sc.nextInt();

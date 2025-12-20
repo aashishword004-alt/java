@@ -3,9 +3,9 @@ class pq extends Thread {
         for (int i = 1; i <= 5; i++) {
             if (i == 3) {
                 Thread.yield();
-                System.out.println("Thread is yield at i = " + i+i);
+                System.out.println("Thread is yield at pq = " + i);
             }
-            System.out.println("Exit from loop 1");
+            System.out.println("Exit from loop pq");
         }
     }
 }
@@ -14,10 +14,10 @@ class pqr extends Thread {
     public void run() {
         for (int j = 1; j <= 5; j++) {
             if (j == 3) {
-                System.out.println("Thread is stopped at j = " + j+j);
-                return; // safe stop
+                stop();
+                System.out.println("Thread is stopped at pqr = " + j);
             }
-            System.out.println("Exit from loop 2");
+            System.out.println("Exit from loop pqr");
         }
     }
 }
@@ -31,9 +31,9 @@ class xyz extends Thread {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Thread is sleep at k = " + k);
+                System.out.println("Thread is sleep at xyz = " + k);
             }
-            System.out.println("Exit from loop 3");
+            System.out.println("Exit from loop xyz");
         }
     }
 }

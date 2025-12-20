@@ -10,6 +10,7 @@ public class fact {
     for(int i=fact-1; i>=1; i--){
         fact = fact * i;
 
+
     }
     System.out.println("Factorial of 5 is " + fact);
     }
